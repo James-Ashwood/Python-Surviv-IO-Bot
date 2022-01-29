@@ -25,9 +25,9 @@ def rightClick():
     pyautogui.mouseUp(button="right");
 
 def checkLocations():
-    d = 0.5
-    if not (pyautogui.locateCenterOnScreen("tree.PNG", confidence=d) is None):
-        for i in [pyautogui.locateCenterOnScreen("tree.PNG", confidence=d)]:
+    d = 0.6
+    if not (pyautogui.locateCenterOnScreen("human.PNG", confidence=d) is None):
+        for i in [pyautogui.locateCenterOnScreen("human.PNG", confidence=d)]:
             pyautogui.moveTo(list(i)[0], list(i)[1])
             click()
 
